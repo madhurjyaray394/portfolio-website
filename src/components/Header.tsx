@@ -112,8 +112,9 @@ export default function Header() {
                             initial={{ x: '100%' }}
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
-                            transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-                            className="fixed top-0 right-0 bottom-0 w-[80%] max-w-sm bg-neutral-950 border-l border-white/10 z-50 p-8 flex flex-col md:hidden"
+                            transition={{ type: "tween", duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
+                            style={{ willChange: 'transform' }}
+                            className="fixed top-0 right-0 bottom-0 w-[80%] max-w-sm bg-neutral-950 border-l border-white/10 z-50 p-8 flex flex-col md:hidden will-change-transform"
                         >
                             <div className="flex justify-between items-center mb-16">
                                 {/* Animated Logo - Same as Desktop */}

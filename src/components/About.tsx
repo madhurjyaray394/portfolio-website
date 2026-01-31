@@ -40,8 +40,9 @@ export default function About() {
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="order-2 lg:order-1 relative aspect-[3/4] w-full max-w-sm mx-auto bg-neutral-900 rounded-2xl overflow-hidden border border-white/10 group shadow-[0_0_30px_6px_rgba(99,102,241,0.35)] lg:shadow-[0_0_25px_4px_rgba(99,102,241,0.25)] lg:hover:shadow-[0_0_45px_10px_rgba(99,102,241,0.45)] transition-shadow duration-500"
+                    transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
+                    style={{ willChange: 'transform, opacity' }}
+                    className="order-2 lg:order-1 relative aspect-[3/4] w-full max-w-sm mx-auto bg-neutral-900 rounded-2xl overflow-hidden border border-white/10 group shadow-[0_0_30px_6px_rgba(99,102,241,0.35)] lg:shadow-[0_0_25px_4px_rgba(99,102,241,0.25)] lg:hover:shadow-[0_0_45px_10px_rgba(99,102,241,0.45)] transition-shadow duration-500 will-change-transform"
                 >
                     {/* Portrait Image - Standard Grayscale */}
                     <div className="relative w-full h-full grayscale-0 lg:grayscale lg:group-hover:grayscale-0 transition-all duration-700 ease-out">
@@ -61,8 +62,9 @@ export default function About() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="order-1 lg:order-2"
+                    transition={{ duration: 0.6, delay: 0.15, ease: [0.32, 0.72, 0, 1] }}
+                    style={{ willChange: 'transform, opacity' }}
+                    className="order-1 lg:order-2 will-change-transform"
                 >
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10 text-white">/ about me</h2>
                     <div className="space-y-8 text-lg md:text-xl text-neutral-400 leading-relaxed font-light">

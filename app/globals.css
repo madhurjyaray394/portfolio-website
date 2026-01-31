@@ -18,6 +18,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Performance Optimizations for Animated Elements */
+.will-change-transform {
+  /* Enable GPU acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  transform: translateZ(0);
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Grain Overlay - Premium Fine Noise */
 body::after {
   content: "";

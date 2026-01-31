@@ -9,7 +9,7 @@ const playlist = [
 
     {
         title: "Raindance",
-        artist: "Mtems & Devv",
+        artist: " tems & Dave ",
         src: "/raindance.mp3"
     },
     {
