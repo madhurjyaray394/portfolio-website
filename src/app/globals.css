@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #e5e5e5;
+  --color-dark-gray: #1a1a1a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grain Overlay - Premium Fine Noise */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.07;
+  /* Slightly increased but blended better */
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-size: 150px 150px;
+  /* Tiling size */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Mobile-only: center primary typographic elements for an editorial feel
+   NOTE: Explicitly exclude card content (.group) and the Hero (section.min-h-screen)
+   to avoid touching layouts and card typography. */
+@media (max-width: 767px) {
+  h1, h2, h3, h4, h5, h6, p, .section-lead, .section-desc {
+    text-align: center;
+  }
+
+  /* Keep card/group text as authored (don't override) */
+  .group * {
+    text-align: initial !important;
+  }
+
+  /* Preserve Hero layout/typography (uses min-h-screen) */
+  section.min-h-screen * {
+    text-align: initial !important;
+  }
+}
