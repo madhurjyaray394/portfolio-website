@@ -48,7 +48,7 @@ export default function About() {
                     <div className="relative w-full h-full grayscale-0 lg:grayscale lg:group-hover:grayscale-0 transition-all duration-700 ease-out">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                            src="/img.jpg"
+                            src="/IMG_3813.jpg"
                             alt="Portrait of the Engineer"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
@@ -68,27 +68,26 @@ export default function About() {
                 >
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10 text-white">/ about me</h2>
                     <div className="space-y-8 text-lg md:text-xl text-neutral-400 leading-relaxed font-light">
-                        <p>
-                            I'm currently a  <span className="text-white font-medium">Self employed Developer</span> building digital products where design quality, performance, and
-                            usability matter. I work at the intersection of engineering and visual systems, turning ideas into clean, fast, and intentional interfaces.
+                        <p className="text-neutral-300 leading-relaxed">
+                            I’m a <strong className="font-semibold text-white">self-employed developer</strong>{" "}
+                            who enjoys turning ideas into real web applications. I focus on frontend
+                            development and clean user experiences, but I’m comfortable working across
+                            the stack when needed.
                         </p>
-                        <p>
-                            I build with a product mindset: clarity over complexity, simplicity over noise, and decisions backed by real use—not trends.
-                            My work is driven by hands-on building, iteration, and refinement.
-                        </p>
-                        <div className="space-y-4">
 
-                            <ul className="list-disc list-inside space-y-2 text-neutral-400 max-w-md mx-auto text-left">
-                                <p className="text-white font-medium">Tools I work with:</p>
-                                <li>JavaScript / TypeScript</li>
-                                <li>React & Next.js</li>
-                                <li>Tailwind CSS</li>
-                                <li>Framer Motion</li>
-                                <li>Modern UI & interaction patterns</li>
-                            </ul>
-                        </div>
-                        <p>Outside of work, I'm into design systems, ambient music, documenting my build process,
-                            and continuously refining my taste through real projects.</p>
+                        <p className="text-neutral-300 leading-relaxed mt-4">
+                            I’m open to collaborations and always learning. Right now I work with{" "}
+                            <strong className="font-medium text-white">React</strong>,{" "}
+                            <strong className="font-medium text-white">Next.js</strong>,{" "}
+                            <strong className="font-medium text-white">JavaScript</strong>, and{" "}
+                            <strong className="font-medium text-white">Tailwind CSS</strong>, and I’m improving my backend skills and learning{" "}
+                            <strong className="font-medium text-white">TypeScript</strong>.
+                        </p>
+
+                        <p className="text-neutral-300 leading-relaxed mt-4">
+                            Outside of work, I love bikes, coffee (with sugar ☕), and music — mostly EDM,
+                            but I listen to almost everything.
+                        </p>
 
                         <div className="pt-6 pb-10 flex justify-center sm:justify-start">
                             <a
