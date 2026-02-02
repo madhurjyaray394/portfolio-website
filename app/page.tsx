@@ -16,7 +16,10 @@ export default function Home() {
       {/* Footer (Desktop only - mobile copyright is in Collaboration section) */}
       <footer className="hidden md:block py-12 border-t border-white/10 text-neutral-500 text-sm">
         <div className="max-w-7xl mx-auto px-2 text-left">
-          Built by Madhu &copy; 2026
+          Built by Madhu &copy; 2026 
+        </div>
+        <div className="max-w-7xl mx-auto px-2 text-left">
+          All rights reserved.
         </div>
       </footer>
     </main>
