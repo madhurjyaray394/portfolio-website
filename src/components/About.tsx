@@ -48,7 +48,7 @@ export default function About() {
                     <div className="relative w-full h-full grayscale-0 lg:grayscale lg:group-hover:grayscale-0 transition-all duration-700 ease-out">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                            src="/IMG_3813.jpg"
+                            src="/IMG_3813.JPG"
                             alt="Portrait of the Engineer"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
