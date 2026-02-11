@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import AudioPlayer from "@/components/AudioPlayer";
-import MobileBottomBar from "@/components/MobileBottomBar";
-import DesktopDock from "@/components/DesktopDock";
+import LoadingScreen from "@/components/LoadingScreen";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,19 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="hidden md:block">
-          <Header />
-        </div>
+        {/* Loading Screen */}
+        <LoadingScreen />
+
+        <Header />
         {children}
 
-        {/* Standalone Audio Player */}
-        {/* <AudioPlayer /> */}
 
-        {/* Desktop Dock (Nav Only) */}
-        <DesktopDock />
-
-        {/* Mobile Bottom Bar (Nav Only) */}
-        <MobileBottomBar />
       </body>
     </html>
   );

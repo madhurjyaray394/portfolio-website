@@ -1,0 +1,56 @@
+{
+    "projects": [
+        {
+            "id": "flowly",
+            "title": "Flowly",
+            "description": "Productivity without complexity - A modern task management application",
+            "techStack": [
+                "React",
+                "Next.js",
+                "JavaScript",
+                "TypeScript",
+                "Supabase"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "src": "/flowly/s1.png",
+                    "alt": "Flowly dashboard overview"
+                },
+                {
+                    "type": "image",
+                    "src": "/flowly/s2.png",
+                    "alt": "Task management interface"
+                },
+                {
+                    "type": "image",
+                    "src": "/flowly/s3.png",
+                    "alt": "Project organization view"
+                },
+                {
+                    "type": "image",
+                    "src": "/flowly/s4.png",
+                    "alt": "Flowly features showcase"
+                },
+                {
+                    "type": "image",
+                    "src": "/flowly/s5.png",
+                    "alt": "Application interface"
+                },
+                {
+                    "type": "image",
+                    "src": "/flowly/s6.png",
+                    "alt": "Application interface"
+                }
+            ],
+            "projectUrl": "https://task-flowly.vercel.app"
+        },
+        {
+            "id": "project-example",
+            "title": "more soon",
+            "description": "A brief description of what this project does in one or two lines maximum",
+            "techStack": [],
+            "media": []
+        }
+    ]
+}

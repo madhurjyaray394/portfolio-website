@@ -15,17 +15,11 @@ const skills = [
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-16 md:py-20 lg:py-24 border-y border-white/5 bg-black overflow-hidden relative z-20">
+        <section id="skills" className="py-10 md:py-10 lg:py-10 border-y border-white/5 bg-black overflow-hidden relative z-20">
             {/* Fade edges */}
-            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black to-transparent z-10" />
-            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black to-transparent z-10" />
+            <div className="absolute left-0 top-0 bottom-0 w-33 bg-gradient-to-r from-black to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-33 bg-gradient-to-l from-black to-transparent z-10" />
 
-            {/* Heading */}
-            <div className="text-center mb-12 md:mb-16 lg:mb-20">
-                <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold text-white tracking-tight">
-                    Professional at
-                </h2>
-            </div>
 
             <div className="flex overflow-hidden">
                 <motion.div
