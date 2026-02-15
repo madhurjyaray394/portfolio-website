@@ -203,8 +203,8 @@ export default function Header() {
                             </div>
 
                             <div className="text-neutral-500 text-sm">
-                                <p>madhurjyaray394@gmail.com</p>
-                                <p className="mt-2">© {new Date().getFullYear()} Ray.</p>
+                                <p>madhurjyaray.business@gmail.com</p>
+                                <p className="mt-2">© {new Date().getFullYear()} madhu ray</p>
                             </div>
                         </motion.div>
                     </>

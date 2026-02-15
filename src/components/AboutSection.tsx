@@ -104,7 +104,7 @@ const AboutSection = () => {
                                 <a href="mailto:madhurjyaray.business@gmail.com" className="connect-link">madhurjyaray.business@gmail.com</a>
                                 <a href="https://github.com/madhurjyaray394" className="connect-link">GitHub</a>
                                 <a href="https://www.linkedin.com/in/madhurjya-ray-93a880268" className="connect-link">LinkedIn</a>
-                                <a href="https://www.instagram.com/madhurjyaray394" className="connect-link">Instagram</a>
+                                <a href="https://www.instagram.com/madhurjya.dev/" className="connect-link">Instagram</a>
                             </div>
                         </div>
                     </SpotlightCard>
