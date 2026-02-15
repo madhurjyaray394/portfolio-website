@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import GradientBlinds from './GradientBlinds';
 import StarBorder from './StarBorder';
@@ -162,9 +162,11 @@ export default function Hero() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 1 }}
-                    className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 font- bold text-sm animate-bounce"
+                    className="w-fit mx-auto mt-16 relative md:absolute md:bottom-10 md:left-1/2 md:-translate-x-1/2 md:m-0 text-white/50"
                 >
-                    scroll down
+                    <div className="animate-bounce">
+                        <ChevronDown size={24} />
+                    </div>
                 </motion.div>
             </section>
         </>

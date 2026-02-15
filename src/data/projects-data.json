@@ -46,11 +46,45 @@
             "projectUrl": "https://task-flowly.vercel.app"
         },
         {
-            "id": "project-example",
-            "title": "more soon",
-            "description": "A brief description of what this project does in one or two lines maximum",
-            "techStack": [],
-            "media": []
+            "id": "streak-mate",
+            "title": "Streak-Mate",
+            "description": "A collaborative habit tracker designed to help friends build consistent habits together through shared streaks and accountability.",
+            "techStack": [
+                "Next.js 16",
+                "TypeScript",
+                "Tailwind CSS",
+                "Supabase",
+                "Postgres",
+                "Auth"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "src": "/Streak-Mate/ss1.png",
+                    "alt": "Streak-Mate Dashboard"
+                },
+                {
+                    "type": "image",
+                    "src": "/Streak-Mate/ss2.png",
+                    "alt": "Habit Tracking Interface"
+                },
+                {
+                    "type": "image",
+                    "src": "/Streak-Mate/ss3.png",
+                    "alt": "Shared Streaks View"
+                },
+                {
+                    "type": "image",
+                    "src": "/Streak-Mate/ss4.png",
+                    "alt": "Progress Analytics"
+                },
+                {
+                    "type": "image",
+                    "src": "/Streak-Mate/ss5.png",
+                    "alt": "Mobile View"
+                }
+            ],
+            "projectUrl": "https://streak-mate-collab.vercel.app"
         }
     ]
 }
