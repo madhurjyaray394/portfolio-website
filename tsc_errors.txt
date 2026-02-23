@@ -1,1 +1,0 @@
-app/layout.tsx(8,31): error TS2307: Cannot find module '@/components/Themeprovider' or its corresponding type declarations.
