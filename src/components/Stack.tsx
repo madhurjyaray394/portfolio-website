@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useTransform, PanInfo } from 'motion/react';
 import React, { useState, useEffect } from 'react';
-import './Stack.css';
+import '../styles/Stack.css';
 
 interface CardRotateProps {
   children: React.ReactNode;

@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from 'react';
 import ImageLightbox from './ImageLightbox';
-import './MediaGrid.css';
+import '../styles/MediaGrid.css';
 
 export interface MediaItem {
     type: 'image' | 'video';

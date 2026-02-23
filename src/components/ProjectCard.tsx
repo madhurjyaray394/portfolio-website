@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import MediaGrid, { MediaItem } from './MediaGrid';
-import './ProjectCard.css';
+import '../styles/ProjectCard.css';
 
 export interface Project {
     id: string;

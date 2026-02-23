@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
-import styles from './GradientBlinds.module.css';
+import styles from '../styles/GradientBlinds.module.css';
 
 const MAX_COLORS = 8;
 const hexToRGB = hex => {

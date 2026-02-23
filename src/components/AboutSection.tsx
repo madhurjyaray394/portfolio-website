@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import SpotlightCard from './SpotlightCard';
-import './AboutSection.css';
+import '../styles/AboutSection.css';
 
 interface AnimatedCardProps {
     children: React.ReactNode;
